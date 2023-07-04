@@ -1,0 +1,114 @@
+package com.app;
+
+import com.app.BinarySerchTree.Node;
+
+class BinarySerchTree{
+	static class Node{
+		private int data;
+		private Node left;
+		private Node right;
+		
+		public Node() {
+			setData(0);
+			left=null;
+			right=null;
+		}
+		
+		public Node(int val) {
+			setData(val);
+			left=null;
+			right=null;
+		}
+
+		public int getData() {
+			return data;
+		}
+
+		public void setData(int data) {
+			this.data = data;
+		}
+	}
+	
+	private Node root;
+	
+	public BinarySerchTree() {
+		root=null;
+	}
+	
+	void add(int val) {
+		Node newNode = new Node(val);
+		
+		if(root==null) {
+			root=newNode;
+		}else {
+			Node trav=root;
+			while(true)
+			if(val<trav.getData()) {
+				if(trav.left != null) {
+					trav=trav.left;
+				}else {
+					trav.left=newNode;
+					break;
+				}
+			}else {
+				if(trav.right != null) {
+					trav=trav.right;
+				}else {
+					trav.right=newNode;
+					break;
+				}
+			}
+		}
+	}
+	public void preorder(Node trav) {
+		if(trav == null) {
+			return ;
+		}
+		System.out.print(trav.getData()+", ");
+		preorder(trav.left);
+		preorder(trav.right);
+	}
+	public void preorder() {
+		preorder(root);
+	}
+	
+	public  Node binarySerch(int val) {
+		Node trav= root;
+		if(root!=null) {
+			while(true) {
+				if(trav.getData()==val) {
+					return trav;
+					
+				}
+				if(val<trav.getData()) {
+					trav=trav.left;
+				}
+				if(val>trav.getData()) {
+					trav=trav.right;
+				}
+			}
+			
+		}
+		
+		return null;
+	}
+}
+
+public class BSTreeMain {
+	public static void main(String[] args) {
+		BinarySerchTree t = new BinarySerchTree();
+		t.add(50);
+		t.add(30);
+		t.add(10);
+		t.add(90);
+		t.add(100);
+		t.add(40);
+		t.add(70);
+		t.add(80);
+		t.add(60);
+		t.add(20);
+		t.preorder();
+		Node node = t.binarySerch(40);
+		System.out.println(node.getData());
+	}
+}

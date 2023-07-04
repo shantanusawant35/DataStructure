@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.app&apos; to &apos;graph_adjmat_wt/src&apos;&#x0D;&#x0A;- Original project: &apos;graph_adjmat_nonwet&apos;&#x0D;&#x0A;- Destination element: &apos;graph_adjmat_wt/src&apos;&#x0D;&#x0A;- Original element: &apos;graph_adjmat_nonwet/src/com.app&apos;" description="Copy package" destination="=graph_adjmat_wt/src" element1="/src&lt;com.app" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1687764447488" version="1.0"/>
+</session>

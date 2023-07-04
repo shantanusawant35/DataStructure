@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.app.AdjMatrixNOnWeightedGraphMain&apos; to &apos;AdjMatrixWeightedGraphMain&apos;&#x0D;&#x0A;- Original project: &apos;graph_adjmat_wt&apos;&#x0D;&#x0A;- Original element: &apos;com.app.AdjMatrixNOnWeightedGraphMain&apos;&#x0D;&#x0A;- Renamed element: &apos;com.app.AdjMatrixWeightedGraphMain&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;AdjMatrixNOnWeightedGraphMain&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.app{AdjMatrixNOnWeightedGraphMain.java[AdjMatrixNOnWeightedGraphMain" matchStrategy="1" name="AdjMatrixWeightedGraphMain" qualified="false" references="true" similarDeclarations="false" stamp="1687764481599" textual="false" version="1.0"/>
+</session>

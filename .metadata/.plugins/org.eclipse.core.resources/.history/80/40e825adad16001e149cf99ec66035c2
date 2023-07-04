@@ -1,0 +1,37 @@
+package com.app;
+
+public class Main {
+//	static int num1=100;
+//	static int num2=200;
+//	static {
+//		num1+=1;
+//		num2+=1;
+//	}
+//	public static void main(String[] args) {
+//		num1+=5;
+//		num2+=10;
+//		System.out.println(num1+num2);
+//	}
+//	static {
+//		num1+=200;
+//		num2+=300;
+//	}
+//	static {
+//		num1+=100;
+//		num2+=100;
+//	}
+	
+	
+	public static void main(String[] args) {
+		String s1="pgdac";
+		String s2 = new String("pgdac");
+		String s3="pgdac";
+		
+		if(s1==s2) {
+			System.out.println("s1==s2");
+		}
+		if(s1==s3)
+			System.out.println("s1==s3");
+	
+	}
+}
